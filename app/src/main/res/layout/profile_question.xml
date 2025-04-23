@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:background="@drawable/border_with_shadow3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/question" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="23dp"
+                    android:text="1) After clicking on your nickname, you can change it.\n \n
+
+2) You can fill in the description field so that we better understand what you like.\n \n
+
+3) The menu below is additional information that is not necessary for future purchases, but can be very useful.
+If you fill it out, then when purchasing various products for which user information is needed, the necessary fields will be filled in automatically, but you can always change it."
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_border3_button"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:elevation="8dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="27dp"
+                    android:text="Ok"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:layout_weight="1"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

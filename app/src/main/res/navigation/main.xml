@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/Store">
+
+
+    <fragment
+        android:id="@+id/newUser"
+        android:name="fragments.NewUser"
+        android:label="NewUser"
+        tools:layout="@layout/fragment_new"/>
+
+    <fragment
+        android:id="@+id/notRegProfile"
+        android:name="fragments.NotRegProfile"
+        android:label="NotRegProfile"
+        tools:layout="@layout/fragment_not_reg"/>
+
+    <fragment
+        android:id="@+id/RegProfile"
+        android:name="fragments.RegProfile"
+        android:label="NotRegProfile"
+        tools:layout="@layout/fragment_reg"/>
+
+    <fragment
+        android:id="@+id/Store"
+        android:name="fragments.StoreFragment"
+        android:label="NotRegProfile"
+        tools:layout="@layout/fragment_store"/>
+
+    <fragment
+        android:id="@+id/Shopping_card"
+        android:name="fragments.ShoppingCardFragment"
+        android:label="NotRegProfile"
+        tools:layout="@layout/fragment_shopping_card"/>
+</navigation>

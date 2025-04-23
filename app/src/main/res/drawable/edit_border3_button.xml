@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#25858585"
+    tools:targetApi="lollipop">
+    <item android:id="@android:id/background">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- Drop Shadow Stack -->
+            <item>
+                <shape>
+                    <padding android:bottom="1.5dp" />
+                    <solid android:color="#03000000" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:bottom="1.5dp" />
+                    <solid android:color="#05000000" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:bottom="1.5dp" />
+                    <solid android:color="#12000000" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:bottom="1.5dp" />
+                    <solid android:color="#17000000" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <padding android:bottom="1.5dp" />
+                    <solid android:color="#21000000" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+
+            <!-- Background -->
+            <item>
+                <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid android:color="#fa8283" />
+                    <corners
+                        android:bottomLeftRadius="20dp"
+                        android:bottomRightRadius="20dp"
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

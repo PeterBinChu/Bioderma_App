@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragments.RegProfile"
+    android:id="@+id/mainRegisterLayout"
+    android:background="@drawable/best">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/for_profile_1"/>
+            <include layout="@layout/for_profile_2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textSize="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:paddingRight="57dp"
+                android:paddingLeft="50dp"
+                android:shadowColor="#66333333"
+                android:textColor="@color/white"
+                android:fontFamily="@font/quick"
+                android:textFontWeight="700"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_border3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.036" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit"
+                    android:textSize="45dp"
+                    android:layout_marginLeft="12dp"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:paddingRight="57dp"
+                    android:paddingLeft="50dp"
+                    android:shadowColor="#66333333"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/quick"
+                    android:textFontWeight="700"
+                    android:textAllCaps="false"
+                    android:background="@drawable/edit_border3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintVertical_bias="0.036" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/edit_border3"
+                    android:id="@+id/administrator_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:textFontWeight="700"
+                    android:layout_gravity="center"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:shadowColor="#66333333"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/quick"
+                    android:textAllCaps="false"
+                    android:textSize="25dp"
+                    android:text="Add product" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

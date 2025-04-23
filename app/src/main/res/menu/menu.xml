@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/store"
+      android:title="Store"
+      android:icon="@drawable/store"/>
+<item android:id="@+id/shopping_card"
+      android:title="shopping_card"
+      android:icon="@drawable/shopping_card_ver1"/>
+<item android:id="@+id/profile"
+      android:title="profile"
+      android:icon="@drawable/first_profile"/>
+</menu>

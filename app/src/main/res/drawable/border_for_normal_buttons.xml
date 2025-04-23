@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#12000000"
+    tools:targetApi="lollipop">
+    <item android:id="@android:id/background">
+    <shape android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+    <gradient
+        android:startColor="#6DCFD8"
+        android:endColor="#CD72DD"
+        android:angle="-135"/>
+    <stroke android:width="3dp" android:color="#000000" />
+    </shape>
+</item>
+</ripple>

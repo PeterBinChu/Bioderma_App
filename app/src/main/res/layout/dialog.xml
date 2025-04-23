@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_with_shadow">
+
+            <TextView
+                android:background="@drawable/edit_border4"
+                android:layout_marginRight="45dp"
+                android:id="@+id/product_text_id1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:textFontWeight="700"
+                android:layout_marginTop="20dp"
+                android:shadowRadius="10"
+                android:fontFamily="@font/quick"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:hint="Loading..."
+                android:textColorHint="@color/white"
+                android:paddingLeft="5dp"
+                android:shadowColor="#66333333"
+                android:singleLine="true"
+                android:textSize="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image_buy"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#48B9DC"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    android:src="@drawable/loading"
+                    app:civ_shadow_color="#48B9DC"
+                    app:civ_shadow_radius="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/price1"
+                        android:background="@drawable/edit_border4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:shadowDx="10"
+                        android:shadowDy="5"
+                        android:shadowRadius="10"
+                        android:hint="Loading..."
+                        android:textColorHint="@color/white"
+                        android:textFontWeight="700"
+                        android:maxLines="1"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:shadowColor="#66333333"
+                        android:fontFamily="@font/quick"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="23dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_border4"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="23dp"
+                            android:shadowDx="10"
+                            android:shadowDy="5"
+                            android:hint="Quantity: "
+                            android:textColorHint="@color/white"
+                            android:shadowRadius="10"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:maxLines="1"
+                            android:textFontWeight="700"
+                            android:shadowColor="#66333333"
+                            android:fontFamily="@font/quick"
+                            android:textColor="@color/white" />
+                        <TextView
+                            android:id="@+id/possible_amount1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="23dp"
+                            android:shadowDx="10"
+                            android:shadowDy="5"
+                            android:layout_marginLeft="10dp"
+                            android:hint="Loading..."
+                            android:textColorHint="@color/white"
+                            android:shadowRadius="10"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:maxLines="1"
+                            android:textFontWeight="700"
+                            android:shadowColor="#66333333"
+                            android:fontFamily="@font/quick"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_border4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textSize="23dp"
+                    android:text="Category: "
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background" />
+
+                <TextView
+                    android:id="@+id/product_category_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:paddingLeft="20dp"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:hint="Loading..."
+                    android:textColorHint="@color/white"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/quick"
+                    android:maxLines="1"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/empty_draw"
+                    android:textSize="23dp"
+                    android:textColor="@color/ic_launcher_background" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_border4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textSize="23dp"
+                    android:text="Description: "
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"/>
+
+                <TextView
+                    android:id="@+id/product_description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:paddingLeft="20dp"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/quick"
+                    android:maxLines="3"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:hint="Loading..."
+                    android:textColorHint="@color/white"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/empty_draw"
+                    android:textSize="23dp"
+                    android:textColor="@color/ic_launcher_background"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/shopping_card_buy"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_shop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quick"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:textFontWeight="700"
+                android:shadowRadius="10"
+                android:shadowColor="#66333333"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:maxLines="1"
+                android:textSize="23dp"
+                android:text="Make an order."
+                android:layout_gravity="center"
+                android:textColor="@color/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quick"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:textFontWeight="700"
+                android:shadowRadius="10"
+                android:shadowColor="#66333333"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:maxLines="2"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="23dp"
+                android:text="Now, you will have to fill the gaps for order information."
+                android:layout_gravity="center"
+                android:textColor="@color/ic_launcher_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+
+                <EditText
+                    android:id="@+id/first_name_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:hint="First name"/>
+
+                <EditText
+                    android:id="@+id/last_name_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:hint="Last name"/>
+
+                <EditText
+                    android:id="@+id/email_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:enabled="false"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/phone_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:inputType="phone"
+                    android:textColor="@color/ic_launcher_background"
+                    android:digits="0123456789+"
+                    android:hint="Phone number"/>
+
+                <EditText
+                    android:id="@+id/country_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:hint="Country"/>
+
+                <EditText
+                    android:id="@+id/city_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:hint="City"/>
+
+                <EditText
+                    android:id="@+id/street_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:textColorHint="#9EFFFFFF"
+                    android:textSize="23dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"
+                    android:hint="Street"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/box"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/final_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:fontFamily="@font/quick"
+                        android:shadowDx="10"
+                        android:shadowDy="5"
+                        android:layout_weight="1"
+                        android:textFontWeight="700"
+                        android:shadowRadius="10"
+                        android:shadowColor="#66333333"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLines="1"
+                        android:gravity="bottom"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="#9EFFFFFF"
+                        android:textSize="35dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_gravity="center"
+                        android:textColor="@color/ic_launcher_background"/>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_border1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:elevation="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="27dp"
+                    android:text="Buy"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ic_launcher_background"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_border1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:elevation="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="27dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Cancel"
+                    android:fontFamily="@font/quick"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:shadowColor="#66333333"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColorHint="#9EFFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/ic_launcher_background"
+                    android:id="@+id/text_cancel"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

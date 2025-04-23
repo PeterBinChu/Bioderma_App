@@ -1,0 +1,14 @@
+Copyright (c) 2025 Damir Amankulov and Gurban Jafarov
+
+All rights reserved.
+
+Permission is hereby granted to any individual or organization to install and use this software for personal or internal purposes, provided that:
+
+1. The software is **not modified** in any way.
+2. The software is **not redistributed** without explicit written permission from both authors.
+3. No person or entity may claim authorship, co-authorship, or ownership of this software other than the original authors: **Damir Amankulov** and **Gurban Jafarov**.
+4. Any form of commercial use, resale, or sublicensing is **strictly prohibited** without explicit written consent.
+
+This software is provided "as is", without warranty of any kind, express or implied.
+
+For permissions or inquiries, please contact: damirichaman@gmail.com

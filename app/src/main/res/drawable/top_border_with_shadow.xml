@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#03FA8283"
+                android:endColor="#03FDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#05FA8283"
+                android:endColor="#05FDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#08FA8283"
+                android:endColor="#08FDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#0DFA8283"
+                android:endColor="#0DFDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#1AFA8283"
+                android:endColor="#1AFDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#1FFA8283"
+                android:endColor="#1FFDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:right="1.5dp" android:bottom="1.5dp" />
+            <gradient
+                android:startColor="#29FA8283"
+                android:endColor="#29FDAD94"
+                android:angle="270"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="100dp" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp" />
+            <gradient
+                android:startColor="#fa8283"
+                android:endColor="#fdad94"
+                android:angle="270"/>
+        </shape>
+    </item>
+</layer-list>

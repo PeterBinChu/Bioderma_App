@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/top_border_no_shadow">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/round_logo"
+            app:civ_border_color="#fa8283"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#fa8283"
+            app:civ_shadow_radius="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/profile_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:textFontWeight="700"
+                android:shadowRadius="10"
+                android:fontFamily="@font/quick"
+                android:textColor="@color/white"
+                android:shadowColor="#66333333"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/profile_desc"
+                    android:layout_width="203dp"
+                    android:layout_height="50dp"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:textFontWeight="700"
+                    android:shadowRadius="10"
+                    android:fontFamily="@font/quick"
+                    android:textColor="@color/white"
+                    android:shadowColor="#66333333"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="#74FFFFFF"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:backgroundTint="@color/white"
+                    android:hint="Description"
+                    android:textSize="19dp" />
+
+                <ImageView
+                    android:id="@+id/profile_edit_desc"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_settings"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:textFontWeight="700"
+                android:shadowColor="#66333333"
+                android:textColor="@color/white"
+                android:fontFamily="@font/quick"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_border3_button"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:textSize="30dp"
+                android:text="Edit"
+                tools:layout_editor_absoluteX="159dp"
+                tools:layout_editor_absoluteY="425dp" />
+
+            <ImageView
+                android:id="@+id/question"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/question"
+                android:background="@drawable/edit_border3_button"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

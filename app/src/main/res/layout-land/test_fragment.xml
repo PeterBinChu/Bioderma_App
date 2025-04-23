@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_margin="70dp"
+                app:srcCompat="@drawable/sadface" />
+
+            <TextView
+                android:id="@+id/notReg"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_margin="40dp"
+                android:fontFamily="@font/coiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oops! You are not registered!"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#7CFFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/coiny"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toTopOf="@+id/password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="#7CFFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/coiny"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+                <ImageView
+                    android:id="@+id/eye"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/eye_open"
+                    app:layout_constraintBottom_toTopOf="@+id/sign"
+                    app:layout_constraintStart_toEndOf="@+id/password" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sign"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/coiny"
+                android:text="Sign in"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/black"
+                android:fadeScrollbars="true"
+                android:fontFamily="@font/coiny"
+                android:text="Register"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_with_shadow2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:textFontWeight="700"
+        android:shadowRadius="10"
+        android:shadowColor="#66333333"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/quick"
+        android:textColor="@color/white"
+        android:textColorHint="#8DFFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:drawableRight="@mipmap/ic_search1"
+        android:hint="Search product"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

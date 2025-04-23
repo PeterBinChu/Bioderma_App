@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    style="?attr/spinnerDropDownItemStyle"
+    android:background="#595959"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shadowDx="10"
+    android:shadowDy="5"
+    android:textFontWeight="700"
+    android:paddingLeft="20dp"
+    android:shadowRadius="10"
+    android:shadowColor="#66333333"
+    android:paddingBottom="5dp"
+    android:fontFamily="@font/quick"
+    android:maxLines="2"
+    android:enabled="false"
+    android:overScrollMode="always"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    android:textSize="18dp"
+    android:textColor="@color/ic_launcher_background">
+
+</TextView>

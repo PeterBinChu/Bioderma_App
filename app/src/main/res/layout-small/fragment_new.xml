@@ -1,0 +1,324 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragments.RegProfile"
+    android:background="@drawable/best">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/happyFace"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/top_border_no_shadow"
+                android:foregroundGravity="center"
+                android:src="@drawable/happy_face_white"/>
+
+            <TextView
+                android:id="@+id/regis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:shadowColor="#66333333"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_border3_no_shadow"
+                android:fontFamily="@font/quick"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="20dp"
+                android:text="Create New Account!"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/top_border_no_shadow"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/quick"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:text="Nickname: "
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="19dp" />
+
+                <EditText
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/white_line1"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:shadowColor="#66333333"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="23dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/quick"
+                        android:gravity="bottom"
+                        android:maxLines="1"
+                        android:shadowDx="10"
+                        android:shadowDy="5"
+                        android:shadowRadius="10"
+                        android:text="E-mail: "
+                        android:textColor="@color/white"
+                        android:textFontWeight="700"
+                        android:textSize="19dp" />
+                <EditText
+                    android:id="@+id/newEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/white_line1"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:shadowColor="#66333333"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="23dp"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/newPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_line1"
+                    android:ems="10"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:shadowColor="#66333333"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:hint="New password"
+                    android:shadowRadius="10"
+                    android:textColorHint="#90FFFFFF"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="23dp" />
+
+                <ImageView
+                    android:id="@+id/newEye"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/eye_open"
+                    app:layout_constraintBottom_toTopOf="@+id/sign"
+                    app:layout_constraintStart_toEndOf="@+id/password" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/newPassword1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_line1"
+                    android:ems="10"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:shadowColor="#66333333"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Confirm password"
+                    android:textColor="@color/white"
+                    android:textColorHint="#90FFFFFF"
+                    android:textFontWeight="700"
+                    android:textSize="23dp" />
+
+                <ImageView
+                    android:id="@+id/newEye1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="16dp"
+                    android:clickable="true"
+                    android:src="@drawable/eye_open"
+                    app:layout_constraintBottom_toTopOf="@+id/sign"
+                    app:layout_constraintStart_toEndOf="@+id/password" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emailTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:maxLines="1"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:text="E-mail code: "
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="19dp"
+                    android:visibility="gone" />
+                <EditText
+                    android:id="@+id/emailPassCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_line1"
+                    android:ems="6"
+                    android:fontFamily="@font/quick"
+                    android:gravity="bottom"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:shadowColor="#66333333"
+                    android:shadowDx="10"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="23dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/newAgain"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="36dp"
+                    android:clickable="true"
+                    android:src="@drawable/again"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/sign"
+                    app:layout_constraintStart_toEndOf="@+id/password" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_border3_button"
+                android:drawableLeft="@mipmap/ic_access"
+                android:fontFamily="@font/quick"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:shadowColor="#66333333"
+                android:shadowDx="10"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:soundEffectsEnabled="false"
+                android:text="Sign in"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="35dp"  />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
